@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <!-- Title -->
+    <title>Portfolio</title>
+    <!-- styles.scss -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Google Font weights -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+     <!-- Gives you icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class = "main-content">
+    <!-- Home page -->
+    <header class="section sec1 header active" id = "home">
+        <!-- Header content -->
+        <div class = "header-content">
+            <div class = "header-left">
+                <div class="leftShape"></div>
+                <div class="leftShapeBorder"></div>
+                <img class = "portfolioSelfie" src = img/profilepic3.JPG>
+           </div>
+           <div class = "header-right">
+             <div class="rightShape"></div>
+             <h1 class="name"> Hi, I'm Ethan Grant </h1>
+          </div>
+      
+        </div>
+    </header>
+<main>
+    <!-- Sections -->
+    <!-- The id's help navigate through sections  -->
+    <section class="section sec2 about" id = "about">
+        <div class = "about-content">
+            <h1 class = aboutInfo> My name is Ethan Grant. I live in San Diego and I 
+                am currently pursuing a Bachelors in Science, Computer Science Degree.
+                My interests are in artificial intelligence, astronomy, software engineering,
+                and web development. I have volunteered in peer tutoring for mathematics and have collaborated
+                with peers in projects for my Computer Science courses. I have a passion for health and
+                fitness, and I competed in my first Strongman competition in early 2023. <h1>
+            <h1 class = cursor> | </h1>
+            <img class = "oceanWave" src = img/oceanwave.png>
+        </div>
+        </div>
+    </section>
+
+    <section class="section sec3 portfolio"id = "portfolio">
+        <!--Container-->
+        <div class = "portfolioContainer">
+        <div class = "portfolioItem1">
+            <!--Links image to website-->
+            <a href = "https://github.com/EthanGrants"><img class = "portfolioImg" src = "img/github.png"></a>
+            <!--Goes with the box-->
+            <h4> My Github </h4>
+        </div>
+        <div class = "portfolioItem2">
+             <a href = "https://ethangrants.github.io/Jupiter/"> <img class = "portfolioImg" src = "img/512space.webp"></a>
+             <h4> Desktop Website </h4>
+        </div>  
+        <div class = "portfolioItem3">
+            <a href = "Document/Resume.pdf"><img class = "portfolioImg" src = "img/resumeImg.png"></a>
+            <h4> Resume </h4>
+        </div>
+        <div class = "portfolioItem4">
+            <img class = "portfolioImg" src = "img/penguin.jpg">
+            <h4> Coming Soon </h4>
+        </div>
+    </div>
+    </section>
+
+    <section class="section sec4 blogs" id = "blogs">
+        <div class = "blogContainer">
+            <h1 class = "welcomeBlog"> Welcome to the Blog</h1>
+            <img class = "frostImg" src = "img/Winterhouse.jpeg"></a>
+            <div class = "blogItem1">
+                <img class = "BlogImg" src = "img/penguin.jpg"></a>
+                <h4> Coming Soon!</h4>
+            </div>
+            <div class = "blogItem2">
+            </div>
+            <div class = "blogItem3">
+            </div>
+            <div class = "blogItem4">
+            </div>
+
+        </div>
+        </section>
+    <section class="section sec5 contact"id = "contact">
+        <div class = "contactContainer">
+            <div class = "contactItem1">
+            <a href = "mailto: ethanpgrant@outlook.com"> <img class = "contactImg" src = "img/outlookImg.png"></a>
+            <h4>Outlook</h4>
+        </div>
+            <div class = "contactItem2">
+                <a href = "https://github.com/EthanGrants"><img class = "contactImg" src = "img/github.png"></a>
+                <h4>Github</h4>
+            </div>
+            <div class = "contactItem3">
+                <a href = "https://discordapp.com"><img class = "contactImg" src = "img/discordImg.webp"></a>
+                <h4>Discord Tag: ethangrant_</h4>
+            </div>
+            <div class = "contactItem4">
+            </div>
+        
+        </div>
+    </section>
+</main>
+<!-- Buttons to switch between sections -->
+<div class="controls">
+    <div class="control control-1 active-btn" data-id="home">
+        <!-- Icon -->
+        <i class="fa-solid fa-house">
+        </i>
+        <!-- Text -->
+        <h6>Home</h6>
+    </div>
+
+    <div class="control control-2 "data-id="about">
+        <i class="fa-solid fa-user"></i>
+        <h6>About</h6>
+    </div> 
+
+    <div class="control control-3 "data-id="portfolio">
+        <i class="fa-solid fa-folder"></i>   
+        <h6>Portfolio</h6>
+    </div>
+
+    <div class="control control-4 "data-id="blogs">
+        <i class="fa-solid fa-newspaper"></i>
+        <h6>Blogs</h6>
+    </div>
+
+    <div class="control control-5 "data-id="contact">
+        <i class="fa-solid fa-envelope"></i>
+        <h6>Contact</h6>
+    </div>
+</div>
+
+<!-- Link app.js -->
+   <script src="app.js"></script>
+</body>
+</html>
